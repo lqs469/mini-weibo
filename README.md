@@ -15,3 +15,4 @@ My Chrome Extension
 
 Suggestions and pull requests are welcomed!.
 
+# mini-weibo
