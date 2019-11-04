@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Mini Weibo",
   "version": "0.1.0",
-  "description": "My Chrome Extension",
+  "description": "Weibo cleaner UI",
   "icons": {
     "16": "icons/icon_16.png",
     "32": "icons/icon_32.png",
@@ -16,21 +16,37 @@
     "persistent": false
   },
   "browser_action": {
-    "default_title": "Mini Weibo",
-    "default_popup": "popup.html"
+    "default_icon": {
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png",
+      "48": "icons/icon_48.png",
+      "128": "icons/icon_128.png"
+    }
   },
   "permissions": [
+    "activeTab",
     "storage"
   ],
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "https://weibo.com/*"
       ],
-      "run_at": "document_idle",
-      "js": [
-        "contentScript.js"
-      ]
+      "css": ["mini-weibo.css"],
+      "js": ["mini-weibo.js"]
     }
-  ]
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+T",
+        "mac": "MacCtrl+Shift+T"
+      },
+      "description": "Opens Mini Weibo"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
 }
