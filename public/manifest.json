@@ -33,7 +33,8 @@
         "https://weibo.com/*"
       ],
       "css": ["mini-weibo.css"],
-      "js": ["mini-weibo.js"]
+      "js": ["mini-weibo.js"],
+      "run_at": "document_start"
     }
   ],
   "commands": {
