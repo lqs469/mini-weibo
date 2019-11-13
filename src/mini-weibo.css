@@ -281,9 +281,9 @@ div[node-type="feed_privateset_tip"] {
 }
 
 /* 左下 */
-div[node-type="box"] {
+/* div[node-type="box"] {
   display: none;
-}
+} */
 
 /* 评论页 */
 .WB_tab_a .W_arrow_bor.W_arrow_bor_tno {
