@@ -32,6 +32,9 @@
       "matches": [
         "https://weibo.com/*"
       ],
+      "exclude_matches": [
+        "https://weibo.com/login*"
+      ],
       "css": ["mini-weibo.css"],
       "js": ["mini-weibo.js"],
       "run_at": "document_start"

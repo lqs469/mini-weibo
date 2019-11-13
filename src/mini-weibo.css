@@ -1,11 +1,10 @@
 body {
   overflow-x: hidden;
   background: #111 !important;
-  color: #fff !important;
 }
 
 body > div {
-  background: transparent !important;
+  /* background: transparent !important; */
   padding: 0 !important;
 }
 
@@ -13,94 +12,6 @@ div.WB_footer {
   display: none;
 }
 
-div.send_weibo div.title_area,
-div[node-type="recommendTopic"] {
-  display: none;
-}
-
-div[node-type="wrap"] {
-  margin: 0 0 20px;
-  padding: 20px 0 5px;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none !important;
-}
-
-input[node-type="searchkeyword"],
-textarea[node-type="textEl"],
-div[node-type="textElDiv"],
-.send_weibo .input,
-.send_weibo .input_simple {
-  background: transparent !important;
-}
-
-
-
-.WB_notes,
-div[node-type="lazyload"],
-div[id="home_new_feed_tip"],
-div[action-type="fl_loadmore_middle"] {
-  background: transparent !important;
-  margin: 0 !important;
-  padding: 5px 0 !important;
-}
-
-div[node-type="feed_list_forwardContent"] {
-  padding: 5px 10px 5px 10px !important;
-  margin: 5px -10px 5px -10px !important;
-  background: transparent;
-  box-shadow: 0 0 1px #eee !important;
-  border-radius: 10px !important;
-  overflow: hidden;
-}
-
-.WB_frame,
-.WB_cardwrap,
-/* div[node-type="comment_lists"] div,
-div[action-type="feed_list_item"] div,
-div[action-type="feed_list_item"] li,
-div[node-type="feed_list_forwardContent"] div */
-.S_bg1,
-.S_bg2,
-.S_bg3 {
-  background: transparent !important;
-}
-
-div[node-type="feed_nav"] {
-  display: none;
-}
-
-div[action-type="feed_list_item"] {
-  border-radius: 0;
-  margin-bottom: 0 !important;
-  background: #000;
-  transition: all 0.1s ease-in-out;
-  box-shadow: none !important;
-}
-.WB_notes:hover,
-div[node-type="feed_commentList_comment"]:hover,
-div[action-type="feed_list_item"]:hover {
-  background: rgba(255,255,255,0.08) !important;
-}
-
-div[action-type="fl_jumpurl"],
-div[action-type="widget_articleLayer"] {
-  box-shadow: 0 0 1px #eee !important;
-}
-
-ul.WB_row_line,
-ul.S_line2,
-span.S_line1 {
-  border: none !important;
-}
-
-.W_layer .W_layer_title {
-  border-bottom: 0 !important;
-}
-
-.W_layer_pop .content {
-  border: solid 1px #666 !important;
-}
 
 div[node-type="top_all"] {
   position: fixed;
@@ -125,15 +36,103 @@ div[class="WB_main_r"] {
   top: 100px;
 }
 
-a[node-type="set_skin"] {
+/* 新微博输入框 */
+div.send_weibo div.title_area,
+div[node-type="recommendTopic"] {
   display: none;
 }
 
+div[node-type="wrap"] {
+  /* background: transparent; */
+  /* box-shadow: none !important; */
+}
+
+/* 屏蔽广告 */
+div[feedtype="ad"] {
+  display: none;
+}
+
+input[node-type="searchkeyword"],
+textarea[node-type="textEl"],
+div[node-type="textElDiv"],
+.send_weibo .input,
+.send_weibo .input_simple {
+  /* background: transparent !important; */
+}
+
+/* 
+.WB_notes,
+div[node-type="lazyload"],
+div[id="home_new_feed_tip"],
+div[action-type="fl_loadmore_middle"] {
+  background: transparent !important;
+  margin: 0 !important;
+  padding: 5px 0 !important;
+} */
+
+div[node-type="feed_list_forwardContent"] {
+  /* background: transparent; */
+  /* padding: 5px 10px 5px 10px !important;
+  margin: 5px -10px 5px -10px !important;
+  box-shadow: 0 0 1px #eee !important;
+  border-radius: 10px !important;
+  overflow: hidden; */
+}
+
+.WB_frame,
+.WB_cardwrap,
+/* div[node-type="comment_lists"] div,
+div[action-type="feed_list_item"] div,
+div[action-type="feed_list_item"] li,
+div[node-type="feed_list_forwardContent"] div */
+.S_bg1,
+.S_bg2,
+.S_bg3 {
+  /* background: transparent !important; */
+}
+
+div[node-type="feed_nav"] {
+  display: none;
+}
+
+div[action-type="feed_list_item"] {
+  /* background: #000; */
+  /* border-radius: 0;
+  margin-bottom: 0 !important;
+  transition: all 0.1s ease-in-out;
+  box-shadow: none !important; */
+}
+.WB_notes:hover,
+div[node-type="feed_commentList_comment"]:hover,
+div[action-type="feed_list_item"]:hover {
+  /* background: rgba(255,255,255,0.08) !important; */
+}
+
+div[action-type="fl_jumpurl"],
+div[action-type="widget_articleLayer"] {
+  /* box-shadow: 0 0 1px #eee !important; */
+}
+
+ul.WB_row_line,
+ul.S_line2,
+span.S_line1 {
+  border: none !important;
+}
+
+.W_layer .W_layer_title {
+  /* border-bottom: 0 !important; */
+}
+
+.W_layer_pop .content {
+  /* border: solid 1px #666 !important; */
+}
+
+/* 右上搜索 */
 .WB_global_nav .gn_search_v2 {
   position: fixed !important;
   right: 10px !important;
   top: 0 !important;
-  background: transparent !important;
+  /* background: transparent !important; */
   border: solid 1px transparent !important;
   transition: width 0.1s ease-in-out;
   width: 105px !important;
@@ -286,36 +285,9 @@ div[node-type="box"] {
   display: none;
 }
 
-/* 投票模块 */
-.WB_card_vote .vote_con1 .item_rt.S_txt1 {
-  border-color: #777;
-}
-
-.WB_card_vote .vote_con1 .item_rt.S_txt1 .bg {
-  background: #162e4f;
-}
-
-/* 消息页tab样式 */
-.WB_tab_a {
-  border-bottom: solid 1px #999;
-}
-
-.WB_tab_a .S_bg2 {
-  background: transparent;
-}
-
+/* 评论页 */
 .WB_tab_a .W_arrow_bor.W_arrow_bor_tno {
   opacity: 0;
-}
-
-/* 评论页 */
-div[node-type="feed_commentList_comment"] .WB_feed_expand {
-  box-shadow: 0 0 1px #eee !important;
-  border-radius: 10px !important;
-  overflow: hidden; 
-}
-div[node-type="feed_commentList_comment"] .WB_expand {
-  margin: 0;
 }
 
 .W_fold {
@@ -327,4 +299,9 @@ div[node-type="feed_commentList_comment"] .WB_expand {
   bottom: 20px !important;
   right: 100px !important;
   background: transparent !important;
+}
+
+/* 换肤 */
+a[node-type="set_skin"] {
+  display: none;
 }
