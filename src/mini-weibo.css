@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  background: #111 !important;
+  /* background: #111 !important; */
 }
 
 body > div {
@@ -11,7 +11,6 @@ body > div {
 div.WB_footer {
   display: none;
 }
-
 
 div[node-type="top_all"] {
   position: fixed;
@@ -303,5 +302,5 @@ div[node-type="feed_privateset_tip"] {
 
 /* 换肤 */
 a[node-type="set_skin"] {
-  display: none;
+  /* display: none; */
 }

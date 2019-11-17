@@ -30,10 +30,14 @@
   "content_scripts": [
     {
       "matches": [
-        "https://weibo.com/*"
+        "https://weibo.com/*",
+        "https://www.weibo.com/*"
       ],
       "exclude_matches": [
-        "https://weibo.com/login*"
+        "https://weibo.com/login*",
+        "https://www.weibo.com/login*",
+        "https://weibo.com/",
+        "https://www.weibo.com/"
       ],
       "css": ["mini-weibo.css"],
       "js": ["mini-weibo.js"],
