@@ -47,7 +47,8 @@ div[node-type="wrap"] {
 }
 
 /* 屏蔽广告 */
-div[feedtype="ad"] {
+div[feedtype="ad"],
+div[ad-data*="ad"] {
   display: none;
 }
 
