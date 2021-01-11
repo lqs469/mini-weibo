@@ -85,3 +85,16 @@ div[class*="Bar_main"] {
 div[class*="SecBar_secBar"] {
   top: 0;
 }
+
+/* Vip icon */
+span[class*="IconVip"], 
+span[title*="认证"] {
+  display: none;
+}
+
+
+/* Tile */
+article div[class*="Feed_body"] header div[class*="head-info_info"] > div {
+  opacity: 0;
+  width: 0px;
+}
