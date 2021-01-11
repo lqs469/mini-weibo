@@ -98,3 +98,16 @@ article div[class*="Feed_body"] header div[class*="head-info_info"] > div {
   opacity: 0;
   width: 0px;
 }
+
+article div[class*="Feed_body"] > header {
+  height: 30px;
+}
+
+article div[class*="Feed_body"] > header div[class*="head_content"] {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+article div[class*="Feed_body"] > header div[class*="head_content"] > div:first-child {
+  margin: 0 5px 0 0;
+}
