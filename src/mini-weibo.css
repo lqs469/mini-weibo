@@ -1,307 +1,87 @@
-body {
-  overflow-x: hidden;
-  /* background: #111 !important; */
-}
 
-body > div {
-  /* background: transparent !important; */
-  padding: 0 !important;
-}
 
-div.WB_footer {
+/* Input and main-feed tab */
+#homeWrap > div:nth-child(2) {
   display: none;
 }
 
-div[node-type="top_all"] {
-  position: fixed;
-  top: -100%;
-}
-
-div[class="WB_frame"] {
-  padding: 0;
-  width: 600px;
-}
-
-div[class="WB_main_l"] {
-  position: fixed;
+/* Right */
+main div[class*="Main_side"] {
   display: none;
+}
+
+/* Left */
+#app div[class*="Frame_side"] {
+  display: none;
+}
+
+/* Right-bottom */
+div[role="navigation"] div[class*="Nav_configs"] {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  margin-right: 0;
+}
+
+div[role="navigation"] div[class*="Nav_configs"] > * {
+  margin: 20px 0 0 0;
+}
+
+div[role="navigation"] div[class*="Nav_configs"] button[class*="Nav_pub"] {
+  display: inline-block;
+}
+
+/* Top navigation */
+div[role="navigation"] div[class*="Ctrls_main"],
+div[role="navigation"] div[class*="Ctrls_main"] > div {
+  position: fixed;
   left: 0;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div[role="navigation"] div[class*="Ctrls_main"] a > div {
+  margin: 10px 0;
+}
+
+div[role="navigation"] div[class*="Ctrls_main"] a div.woo-tab-item-border {
+  display: none;
+}
+
+/* Search */
+div[role="navigation"] div[class*="Nav_search"] {
+  z-index: 1;
+  position: fixed;
+  min-width: 220px;
+  top: 0;
+  right: 20px;
+}
+
+div[role="navigation"] div[class*="Nav_search"] > div {
+  visibility: visible;
+}
+
+
+/* Header */
+div[role="navigation"] {
+  height: 0;
+  position: fixed;
+  top: -60px;
+}
+
+div[class*="Frame_top"] {
+  height: 0px;
+}
+
+
+div[class*="Bar_main"] {
   top: 0;
 }
 
-div[class="WB_main_r"] {
-  position: fixed;
-  right: -100%;
-  top: 100px;
-}
-
-/* 新微博输入框 */
-div.send_weibo div.title_area,
-div[node-type="recommendTopic"] {
-  display: none;
-}
-
-div[node-type="wrap"] {
-  /* background: transparent; */
-  /* box-shadow: none !important; */
-}
-
-/* 屏蔽广告 */
-div[feedtype="ad"],
-div[ad-data*="ad"] {
-  display: none;
-}
-
-input[node-type="searchkeyword"],
-textarea[node-type="textEl"],
-div[node-type="textElDiv"],
-.send_weibo .input,
-.send_weibo .input_simple {
-  /* background: transparent !important; */
-}
-
-/* 
-.WB_notes,
-div[node-type="lazyload"],
-div[id="home_new_feed_tip"],
-div[action-type="fl_loadmore_middle"] {
-  background: transparent !important;
-  margin: 0 !important;
-  padding: 5px 0 !important;
-} */
-
-div[node-type="feed_list_forwardContent"] {
-  /* background: transparent; */
-  /* padding: 5px 10px 5px 10px !important;
-  margin: 5px -10px 5px -10px !important;
-  box-shadow: 0 0 1px #eee !important;
-  border-radius: 10px !important;
-  overflow: hidden; */
-}
-
-.WB_frame,
-.WB_cardwrap,
-/* div[node-type="comment_lists"] div,
-div[action-type="feed_list_item"] div,
-div[action-type="feed_list_item"] li,
-div[node-type="feed_list_forwardContent"] div */
-.S_bg1,
-.S_bg2,
-.S_bg3 {
-  /* background: transparent !important; */
-}
-
-div[node-type="feed_nav"] {
-  display: none;
-}
-
-div[action-type="feed_list_item"] {
-  /* background: #000; */
-  /* border-radius: 0;
-  margin-bottom: 0 !important;
-  transition: all 0.1s ease-in-out;
-  box-shadow: none !important; */
-}
-.WB_notes:hover,
-div[node-type="feed_commentList_comment"]:hover,
-div[action-type="feed_list_item"]:hover {
-  /* background: rgba(255,255,255,0.08) !important; */
-}
-
-div[action-type="fl_jumpurl"],
-div[action-type="widget_articleLayer"] {
-  /* box-shadow: 0 0 1px #eee !important; */
-}
-
-ul.WB_row_line,
-ul.S_line2,
-span.S_line1 {
-  border: none !important;
-}
-
-.W_layer .W_layer_title {
-  /* border-bottom: 0 !important; */
-}
-
-.W_layer_pop .content {
-  /* border: solid 1px #666 !important; */
-}
-
-/* 右上搜索 */
-.WB_global_nav .gn_search_v2 {
-  position: fixed !important;
-  right: 10px !important;
-  top: 0 !important;
-  /* background: transparent !important; */
-  border: solid 1px transparent !important;
-  transition: width 0.1s ease-in-out;
-  width: 105px !important;
-}
-
-.gn_search_v2 .placeholder {
-  display: none;
-  font-size: 14px;
-  line-height: 23px !important;
-}
-
-.WB_global_nav .gn_clicked_v2 {
-  width: 218px !important;
-  border: solid 1px #fa7d3c!important;
-}
-
-@media screen and (min-width: 1295px) {
-  .WB_global_nav .gn_clicked_v2 {
-    width: 468px !important;
-  }
-}
-
-input[node-type="searchInput"] {
-  color: #eee !important;
-}
-
-div[node-type="searchSuggest"] {
-  position: fixed;
-  right: 10px !important;
-  top: 40px !important;
-  left: auto !important;
-}
-
-/* 左侧 */
-div[node-type="logo"] {
-  position: fixed !important;
-  left: 15px !important;
-  top: calc(50% - 198px) !important;
-  width: 30px !important;
-  overflow: hidden !important;
-  transform: scale(0.86);
-}
-div[node-type="logo"] .logo {
-  background-position: 0 !important;
-}
-
-a[suda-uatrack="key=topnav_tab&value=discover"] em,
-a[node-type="msg"] em,
-a[node-type="account"] em {
-  color: #fff !important;
-  font-size: 25px !important;
-}
-
-a[suda-uatrack="key=topnav_tab&value=discover"] em:hover,
-a[node-type="msg"] em:hover,
-a[node-type="account"] em:hover {
-  color: #fa7d3c !important;
-}
-
-a[suda-uatrack="key=topnav_tab&value=discover"] {
-  position: fixed;
-  left: 15px !important;
-  top: calc(50% - 120px);
-}
-a[suda-uatrack="key=topnav_tab&value=discover"] .S_txt1 {
-  display: none !important;
-}
-
-a[node-type="msg"] {
-  position: fixed;
-  left: 15px !important;
-  top: calc(50% - 60px) !important;
-}
-
-div[node-type="msgLayer"] {
-  position: fixed !important;
-  left: 45px !important;
-  top: calc(50% - 60px) !important;
-}
-
-a[node-type="account"] {
-  position: fixed;
-  left: 15px !important;
-  top: calc(50%) !important;
-}
-
-div[node-type="accountLayer"] {
-  position: fixed !important;
-  left: 45px !important;
-  top: calc(50%) !important;
-}
-
-.headpic {
-  display: none;
-}
-div[class="custom-headpic"] {
-  display: block;
-  position: fixed;
-  top: calc(50% + 50px) !important;
-  transform: translateX(0px) scale(0.44);
-  left: -2px;
-}
-
-div[node-type="msgLayer"] .W_layer_arrow,
-div[node-type="accountLayer"] .W_layer_arrow {
-  display: none;
-}
-
-/* 右下 */
-div[node-type="chatMiniRoot"] {
-  position: fixed !important;
-  right: 0;
-  top: -100% !important;
-}
-
-span[suda-uatrack="key=weibo_chat_page&value=bottom"] {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  background: transparent !important;
-}
-
-a[node-type="publish"] {
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-}
-a[node-type="publish"] em {
-  color: #ddd;
-  width: 50px !important;
-  line-height: 50px !important;
-  height: 50px !important;
-  background: #fa7d3c !important;
-  border-radius: 50% !important;
-  font-size: 30px !important;
-  overflow: hidden !important;
-  transition: all 0.1s ease-in-out;
-}
-a[node-type="publish"] em:hover {
-  color: #fff;
-  background: #fa6616 !important;
-}
-
-div[node-type="feed_privateset_tip"] {
-  display: none;
-}
-
-/* 左下 */
-/* div[node-type="box"] {
-  display: none;
-} */
-
-/* 评论页 */
-.WB_tab_a .W_arrow_bor.W_arrow_bor_tno {
-  opacity: 0;
-}
-
-.W_fold {
-  display: none;
-}
-
-.W_gotop {
-  left: auto !important;
-  bottom: 20px !important;
-  right: 100px !important;
-  background: transparent !important;
-}
-
-/* 换肤 */
-a[node-type="set_skin"] {
-  /* display: none; */
+div[class*="SecBar_secBar"] {
+  top: 0;
 }

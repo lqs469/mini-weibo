@@ -35,12 +35,14 @@
       ],
       "exclude_matches": [
         "https://weibo.com/login*",
-        "https://www.weibo.com/login*",
-        "https://weibo.com/",
-        "https://www.weibo.com/"
+        "https://www.weibo.com/login*"
       ],
-      "css": ["mini-weibo.css"],
-      "js": ["mini-weibo.js"],
+      "css": [
+        "mini-weibo.css"
+      ],
+      "js": [
+        "mini-weibo.js"
+      ],
       "run_at": "document_start"
     }
   ],

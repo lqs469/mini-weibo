@@ -1,17 +1,15 @@
 # <img src="public/icons/icon_48.png" width="45" align="left"> Mini Weibo
 
-My Chrome Extension
+A tiny tool to make the Weibo UI cleaner.
 
 ## Features
 
-- Feature 1
-- Feature 2
+- Remove redundant buttons
+- Re-layout the page
 
-## Install
+<!-- ## Install -->
 
-[**Chrome** extension]() <!-- TODO: Add chrome extension link inside parenthesis -->
+<!-- [**Chrome** extension]() TODO: Add chrome extension link inside parenthesis -->
 
-## Contribution
 
-Suggestions and pull requests are welcomed!.
 
