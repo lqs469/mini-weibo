@@ -23,9 +23,7 @@
       "128": "icons/icon_128.png"
     }
   },
-  "permissions": [
-    "activeTab"
-  ],
+  "permissions": [],
   "content_scripts": [
     {
       "matches": [
